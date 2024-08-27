@@ -1,0 +1,14 @@
+Architecture
+
+Components:-
+    1.Express.js Server: Manages file monitoring and processing tasks.
+    2.File Watcher: Utilizes chokidar to monitor the input folder for new files.
+    3.File Processor: Contains the logic to split files into chunks and save them to the output folder.
+   
+
+
+Flow:-
+    1.File Detection: chokidar watches the input folder for new files.
+    2.file Processing:  splitting files into chunks.
+    3.Chunk Storage: Chunks are saved in the output folder.
+    4.Data Integrity Verification: Optionally verify that chunks accurately represent the original file’s data.
